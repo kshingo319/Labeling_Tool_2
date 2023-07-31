@@ -246,7 +246,7 @@ function countUp_quality() {
   const target = document.getElementById("sample");
   target.setAttribute("src", `src/${dataset_today}/${img_array[question_num]}.jpg`);
   target.setAttribute("alt", `画像の代わり${img_array[question_num]}`);
-  confirm('良品と登録します');
+  confirm('良品と登録します(他の回答者との合致率：○○％)');
   //let answer = postData_quality();
   /*
   checkAll.checked = false;
@@ -319,7 +319,7 @@ function countUp_defective() {
     el[i].checked = false;
   }
   */
-  confirm('不良品と登録します');
+  confirm('不良品と登録します(他の回答者との合致率：○○％)');
   document.getElementById('quality').style.display = 'inline';
   document.getElementById('defective').style.display = 'inline';
   document.getElementById("decision").style.display = 'none';
